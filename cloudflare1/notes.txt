@@ -1,0 +1,3 @@
+nameserver: meilani.ns.cloudflare.com, yichun.ns.cloudflare.com
+portfolio: rusydiyusof-github-io.pages.dev, www.rygx.com
+private-site: private-site-ry.pages.dev, custom.rygx.com
