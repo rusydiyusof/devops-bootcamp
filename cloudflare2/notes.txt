@@ -1,0 +1,4 @@
+elastic-ip: 56.10.42.52
+web: web.rygx.my (A record, proxied)
+tunnel: cloudflare2.rygx.my
+ssl-mode: Flexible
