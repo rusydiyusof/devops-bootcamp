@@ -1,0 +1,8 @@
+984774735197.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/rusydiyusof:v1   d869cf8a6723        105MB         31.6MB   U    
+NETWORK ID     NAME      DRIVER    SCOPE
+612801c1c065   arena     bridge    local
+f52499211bb6   bridge    bridge    local
+1d9c66957662   host      host      local
+2259565fbc62   none      null      local
+DRIVER    VOLUME NAME
+local     me
