@@ -1,0 +1,8 @@
+container: run the app
+image: wrap as a template
+registry: place to store and share image
+volume: store data
+network: all in one place
+compose: one file to run everything
+NAME                STATUS              CONFIG FILES
+arena               running(5)          /home/rusydiyusof/arena/compose.yaml
