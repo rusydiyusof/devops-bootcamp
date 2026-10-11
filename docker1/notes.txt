@@ -1,0 +1,23 @@
+Docker version 29.6.2, build dfc4efb
+IMAGE                                                                              ID             DISK USAGE   CONTENT SIZE   EXTRA
+984774735197.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/rusydiyusof:v1   d869cf8a6723        105MB         31.6MB   U    
+app:kecil                                                                          d869cf8a6723        105MB         31.6MB   U    
+db-app2:v1                                                                         ec0e44b30400        105MB         31.6MB   U    
+db-app:v1                                                                          49d2767610cb       1.83GB          474MB   U    
+ghcr.io/infratify/arena-avatar:latest                                              398f87c92ca6        201MB         49.1MB   U    
+ghcr.io/infratify/arena-server:latest                                              42a0c983d4ab        195MB         48.7MB   U    
+redis:latest                                                                       c94085d298b7        213MB         57.6MB   U    
+web:latest                                                                         faa8e99b56f8       93.6MB         26.3MB   U    
+web:v1                                                                             faa8e99b56f8       93.6MB         26.3MB   U    
+CONTAINER ID   IMAGE                                                                              COMMAND                  CREATED      STATUS                    PORTS                                         NAMES
+b31fc008bc17   ghcr.io/infratify/arena-avatar                                                     "docker-entrypoint.s…"   3 days ago   Up 3 days                 0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   arena-avatar-1
+155e102fb43d   ghcr.io/infratify/arena-avatar                                                     "docker-entrypoint.s…"   3 days ago   Up 3 days                 0.0.0.0:8082->8080/tcp, [::]:8082->8080/tcp   arena-avatar3-1
+bad630b97fa4   ghcr.io/infratify/arena-avatar                                                     "docker-entrypoint.s…"   3 days ago   Up 3 days                 0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp   arena-avatar2-1
+3f45c6035aec   redis                                                                              "docker-entrypoint.s…"   3 days ago   Up 3 days                 6379/tcp                                      arena-profile-1
+3fc105d0ac0d   ghcr.io/infratify/arena-server                                                     "docker-entrypoint.s…"   3 days ago   Up 3 days                 3000/tcp                                      arena-server-1
+ab9d4cea05f3   6f81e8915c60                                                                       "docker-entrypoint.s…"   5 days ago   Exited (255) 3 days ago   6379/tcp                                      profile
+36f7cfa0f8a8   984774735197.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/rusydiyusof:v1   "/docker-entrypoint.…"   5 days ago   Exited (255) 3 days ago   0.0.0.0:8080->80/tcp                          busy_knuth
+247a42087b10   db-app2:v1                                                                         "/docker-entrypoint.…"   9 days ago   Exited (0) 5 days ago                                                   db-app2
+856dec947fe3   db-app:v1                                                                          "docker-entrypoint.s…"   9 days ago   Exited (137) 9 days ago                                                 db-app
+0da695a85a1f   web:latest                                                                         "/docker-entrypoint.…"   9 days ago   Exited (0) 9 days ago                                                   web-latest
+bd8f1ada37c0   web:v1                                                                             "/docker-entrypoint.…"   9 days ago   Exited (0) 9 days ago                                                   web
