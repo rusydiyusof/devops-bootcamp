@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rusydi Yusof | DevOps Bootcamp 2026</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+    }
+
+    .student-card {
+      width: min(100%, 360px);
+      padding: 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      animation: fade-in 0.9s ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .student-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 1.25rem;
+      padding: 0.45rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: 1.75rem;
+      line-height: 1.2;
+    }
+
+    .details {
+      display: grid;
+      gap: 0.85rem;
+      text-align: left;
+    }
+
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+
+    .label {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    .value {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.45);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .student-card,
+      .badge {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="student-card">
+    <span class="badge">DevOps Bootcamp 2026</span>
+    <h1>Rusydi Yusof</h1>
+
+    <div class="details">
+      <div class="detail">
+        <span class="label">Cohort</span>
+        <span class="value">2026</span>
+      </div>
+      <div class="detail">
+        <span class="label">Role</span>
+        <span class="value">DevOps Engineer</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
